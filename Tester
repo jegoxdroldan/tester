@@ -16,7 +16,7 @@ local A_1 =
    return self
 end
 --//
-local bankid = "12589f29-a832-417a-8eda-626190479d97"--bank
+local bankid = "469299ad-dafd-48b3-8e9f-92658f9bb21d"--bank
 for i=1, 1000 do
    Bank(bankid):withdraw({}, 1)
    print('withdrawed 1 gem')
