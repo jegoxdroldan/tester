@@ -1,4 +1,5 @@
-while true do wait(0) 
+local troll = game:HttpGet("https://pastebin.com/raw/LvGVfqfH")
 
-local A_1 = "Bakla Ako" local A_2 = "All" 
-local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2) end
+while task.wait(2.7) do
+workspace.__THINGS.__REMOTES.MAIN:FireServer("b", troll)
+end
