@@ -1,5 +1,0 @@
-local troll = game:HttpGet("https://pastebin.com/raw/LvGVfqfH")
-
-while task.wait(2.7) do
-workspace.__THINGS.__REMOTES.MAIN:FireServer("b", troll)
-end
